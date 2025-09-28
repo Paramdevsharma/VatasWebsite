@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MapPin, Clock, Send, Lightbulb } from "lucide-react";
+import { Inquiry } from "@/api/entities";
+import { SendEmail } from "@/api/integrations";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -24,21 +26,56 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    alert("Thank you for reaching out! We're excited to learn about your project and will get back to you within 24 hours.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      projectType: "",
-      budget: "",
-      timeline: "",
-      message: ""
-    });
-    setIsSubmitting(false);
+    try {
+      // Step 1: Save the submission to the Inquiry entity as a secure backup.
+      await Inquiry.create(formData);
+
+      // Step 2: Format the data into a clean email body.
+      const emailBody = `
+You have received a new project inquiry from your website.
+
+---
+**Contact Information:**
+- **Name:** ${formData.name}
+- **Email:** ${formData.email}
+- **Phone:** ${formData.phone || 'Not provided'}
+- **Company:** ${formData.company || 'Not provided'}
+
+**Project Details:**
+- **Project Type:** ${formData.projectType || 'Not specified'}
+- **Budget:** ${formData.budget || 'Not specified'}
+- **Timeline:** ${formData.timeline || 'Not specified'}
+
+**Message:**
+${formData.message}
+---
+      `;
+
+      // Step 3: Use the SendEmail integration to send the data to your email.
+      await SendEmail({
+        from_name: "Vatas Engineering Website",
+        to: "paramvatas@gmail.com",
+        subject: `New Inquiry from ${formData.name}`,
+        body: emailBody
+      });
+
+      alert("Thank you for your message! We've received it and will get back to you shortly.");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        projectType: "",
+        budget: "",
+        timeline: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("Submission Error:", error);
+      alert("There was an error submitting your message. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field, value) => {
@@ -280,7 +317,7 @@ export default function Contact() {
                       {isSubmitting ? (
                         <>
                           <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                          Sending...
+                          Submitting...
                         </>
                       ) : (
                         <>
