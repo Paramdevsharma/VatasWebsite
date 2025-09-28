@@ -1,6 +1,8 @@
 import { base44 } from './base44Client';
 
 
+export const Inquiry = base44.entities.Inquiry;
+
 
 
 // auth sdk:
