@@ -5,37 +5,33 @@ import { Linkedin, Mail } from "lucide-react";
 
 const team = [
   {
-    name: "Dr. Sarah Chen",
+    name: "Karan Dev Sharma, P.Eng., PMP",
     role: "Founder & Principal Engineer",
-    specialization: "Structural Engineering",
-    background: "PhD Stanford, 12 years at Arup & AECOM",
-    education: "PhD, Stanford University",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+    specialization: "Municipal Engineering",
+    background: "Managed a $22M/year structural renewal program at York Region and contributed to projects valued at $400M–$4.6B.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
   },
   {
-    name: "Marcus Rodriguez, PE",
-    role: "Lead Structural Engineer", 
-    specialization: "Infrastructure Design",
-    background: "MS UC Berkeley, 10 years experience",
-    education: "MS, UC Berkeley",
+    name: "Co-Founder",
+    role: "Lead, Digital & Technology", 
+    specialization: "Software & Cloud Architecture",
+    background: "Proven track record in software development, cloud infrastructure, and technology solution architecture for government and enterprise clients.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
   },
   {
     name: "Dr. Emily Thompson",
     role: "Environmental Engineering Lead",
     specialization: "Sustainability Solutions",
-    background: "PhD MIT, Green building expert", 
-    education: "PhD, MIT",
+    background: "PhD MIT, Green building expert. Focused on lifecycle design and carbon reduction.", 
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
   },
-  {
-    name: "James Park, PE",
-    role: "Civil Engineering Director",
-    specialization: "Transportation & Infrastructure",
-    background: "MS CalTech, 8 years at Jacobs",
-    education: "MS, CalTech",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-  }
+    {
+    name: "Dr. Sarah Chen",
+    role: "Lead Structural Engineer",
+    specialization: "Bridge & Culvert Rehabilitation",
+    background: "PhD Stanford, 12 years at Arup & AECOM. Expert in structural assessments and rehab planning.",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+  },
 ];
 
 export default function TeamSection() {

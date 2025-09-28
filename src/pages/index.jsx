@@ -10,6 +10,8 @@ import Contact from "./Contact";
 
 import Vision from "./Vision";
 
+import Digital from "./Digital";
+
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
@@ -23,6 +25,8 @@ const PAGES = {
     Contact: Contact,
     
     Vision: Vision,
+    
+    Digital: Digital,
     
 }
 
@@ -60,6 +64,8 @@ function PagesContent() {
                 <Route path="/Contact" element={<Contact />} />
                 
                 <Route path="/Vision" element={<Vision />} />
+                
+                <Route path="/Digital" element={<Digital />} />
                 
             </Routes>
         </Layout>

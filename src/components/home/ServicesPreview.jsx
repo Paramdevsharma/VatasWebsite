@@ -3,26 +3,26 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Building, Layers, Leaf, Users, ArrowRight } from "lucide-react";
+import { Building, TrafficCone, Code, Users, ArrowRight } from "lucide-react";
 
 const services = [
   {
     icon: Building,
     title: "Structural Engineering",
-    description: "Modern structural analysis and design solutions using the latest engineering software and methodologies.",
-    features: ["Advanced 3D Modeling", "Seismic Design", "Sustainable Materials"]
+    description: "Modern analysis, design, and rehabilitation solutions for bridges, culverts, and buildings.",
+    features: ["Advanced 3D Modeling", "Rehabilitation Planning", "Seismic Design"]
   },
   {
-    icon: Layers,
-    title: "Civil Engineering", 
-    description: "Comprehensive civil engineering services for infrastructure development and site planning.",
-    features: ["Site Development", "Infrastructure Planning", "Smart City Solutions"]
+    icon: TrafficCone,
+    title: "Transportation Engineering", 
+    description: "Data-driven mobility solutions including traffic impact studies, corridor modeling, and safety audits.",
+    features: ["Traffic Impact Studies", "Corridor Modeling", "Road Safety Audits"]
   },
   {
-    icon: Leaf,
-    title: "Environmental Solutions",
-    description: "Green engineering practices focused on sustainability and environmental responsibility.",
-    features: ["Green Building Design", "Environmental Impact", "Renewable Integration"]
+    icon: Code,
+    title: "Software Solutions",
+    description: "Custom applications, dashboards, and automation tools for public sector operations.",
+    features: ["Municipal Dashboards", "Custom Web Apps", "Process Automation"]
   },
   {
     icon: Users,

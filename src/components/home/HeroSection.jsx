@@ -1,8 +1,9 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Lightbulb } from "lucide-react";
+import { ArrowRight, Lightbulb, Code, Construction } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -13,21 +14,19 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="inline-flex items-center px-4 py-2 bg-[var(--color-accent-light)] border border-[var(--color-border)] rounded-full text-[var(--color-secondary-gray)] text-sm font-medium">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-              Brand new engineering firm - Now accepting projects!
+              Now accepting new engineering projects
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Innovative Ideas,
+              Modern Engineering.
               <span className="block text-[var(--color-accent-primary)]">
-                Expert
+                Integrated Solutions.
               </span>
-              Engineering
             </h1>
             
             <p className="text-xl text-[var(--color-text-muted)] leading-relaxed max-w-lg">
-              Welcome to Vatas Engineering - where fresh thinking meets engineering excellence. 
-              We're a new firm ready to tackle your projects with innovative solutions 
-              and cutting-edge expertise.
+              The only firm that delivers both civil engineering expertise AND custom software solutions. 
+              From bridge rehabilitation to municipal dashboards - we handle the full spectrum of modern infrastructure needs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -37,27 +36,34 @@ export default function HeroSection() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link to={createPageUrl("Vision")}>
+              <Link to={createPageUrl("Services")}>
                 <Button size="lg" variant="outline" className="border-[var(--color-border)] text-[var(--color-text-dark)] hover:bg-[var(--color-accent-light)]">
-                  <Lightbulb className="w-5 h-5 mr-2" />
-                  Our Vision
+                  <Construction className="w-5 h-5 mr-2" />
+                  Our Services
                 </Button>
               </Link>
             </div>
 
-            {/* Trust Indicators */}
+            {/* Dual Expertise Indicators */}
             <div className="flex items-center gap-8 pt-8">
-              <div>
-                <div className="text-2xl font-bold text-[var(--color-primary-dark)]">Fresh</div>
-                <div className="text-sm text-[var(--color-text-muted)]">Perspective</div>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-[var(--color-primary-dark)] rounded-xl flex items-center justify-center">
+                  <Construction className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <div className="text-lg font-bold text-[var(--color-primary-dark)]">Civil</div>
+                  <div className="text-sm text-[var(--color-text-muted)]">Engineering</div>
+                </div>
               </div>
-              <div>
-                <div className="text-2xl font-bold text-[var(--color-primary-dark)]">Expert</div>
-                <div className="text-sm text-[var(--color-text-muted)]">Team</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-[var(--color-primary-dark)]">Ready</div>
-                <div className="text-sm text-[var(--color-text-muted)]">To Deliver</div>
+              <div className="text-2xl text-[var(--color-secondary-gray)]">+</div>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-[var(--color-accent-primary)] rounded-xl flex items-center justify-center">
+                  <Code className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <div className="text-lg font-bold text-[var(--color-accent-primary)]">Software</div>
+                  <div className="text-sm text-[var(--color-text-muted)]">Development</div>
+                </div>
               </div>
             </div>
           </div>
@@ -68,7 +74,7 @@ export default function HeroSection() {
               <div className="h-full flex items-center justify-center">
                 <img 
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=600&fit=crop&crop=faces"
-                  alt="Modern engineering team"
+                  alt="Engineering and technology team"
                   className="rounded-2xl object-cover w-full h-full shadow-xl"
                 />
               </div>
@@ -76,12 +82,12 @@ export default function HeroSection() {
             
             {/* Floating Cards */}
             <div className="absolute -top-4 -right-4 bg-white/80 backdrop-blur-sm rounded-2xl p-4 border border-[var(--color-border)] shadow-lg">
-              <div className="text-2xl font-bold text-[var(--color-primary-dark)]">New</div>
-              <div className="text-xs text-[var(--color-text-muted)]">& Innovative</div>
+              <div className="text-2xl font-bold text-[var(--color-primary-dark)]">Dual</div>
+              <div className="text-xs text-[var(--color-text-muted)]">Expertise</div>
             </div>
             
             <div className="absolute -bottom-4 -left-4 bg-white/80 backdrop-blur-sm rounded-2xl p-4 border border-[var(--color-border)] shadow-lg">
-              <div className="text-2xl font-bold text-[var(--color-primary-dark)]">2024</div>
+              <div className="text-2xl font-bold text-[var(--color-primary-dark)]">2025</div>
               <div className="text-xs text-[var(--color-text-muted)]">Founded</div>
             </div>
           </div>
