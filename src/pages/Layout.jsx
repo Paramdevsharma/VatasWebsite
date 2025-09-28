@@ -39,15 +39,15 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>(555) 987-6543</span>
+              <span>647-760-5889</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>hello@vatasengineering.com</span>
+              <span>paramvatas@gmail.com</span>
             </div>
           </div>
           <div className="hidden md:block text-gray-100">
-            Innovative Engineering Solutions for a Sustainable Future
+            Civil Engineering & Digital Solutions for Modern Infrastructure
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ export default function Layout({ children, currentPageName }) {
               <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c492baa23201e24e8eaa63/b1d6f271f_image.png" alt="Vatas Engineering Logo" className="h-8 w-auto" />
               <div>
                 <div className="text-xl font-bold text-[var(--color-text-dark)]">Vatas Engineering</div>
-                <div className="text-xs text-[var(--color-text-muted)] -mt-1">Engineering Excellence for a Sustainable World</div>
+                <div className="text-xs text-[var(--color-text-muted)] -mt-1">Integrated Engineering for Public Infrastructure</div>
               </div>
             </Link>
 
@@ -143,17 +143,17 @@ export default function Layout({ children, currentPageName }) {
                 </div>
               </div>
               <p className="text-gray-200 mb-6 max-w-md">
-                Vatas Engineering provides cutting-edge solutions, specializing in structural, civil, and environmental engineering. We are committed to innovation and sustainability.
+                Vatas Engineering combines civil engineering expertise with custom software development to deliver complete solutions for modern infrastructure challenges.
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">Services</h3>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-gray-200">
-                <li>Structural Engineering</li>
-                <li>Civil Engineering</li>
-                <li>Geotechnical Engineering</li>
-                <li>Sustainable Design</li>
+                <li><Link to={createPageUrl("About")} className="hover:underline">About Us</Link></li>
+                <li><Link to={createPageUrl("Services")} className="hover:underline">Our Services</Link></li>
+                <li><Link to={createPageUrl("Vision")} className="hover:underline">Our Vision</Link></li>
+                <li><Link to={createPageUrl("Contact")} className="hover:underline">Contact</Link></li>
               </ul>
             </div>
 
@@ -162,22 +162,22 @@ export default function Layout({ children, currentPageName }) {
               <div className="space-y-2 text-gray-200">
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <span>(555) 987-6543</span>
+                  <span>647-760-5889</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>hello@vatasengineering.com</span>
+                  <span>paramvatas@gmail.com</span>
                 </div>
                 <div className="pt-2">
-                  <p>123 Innovation Drive</p>
-                  <p>Tech City, CA 90210</p>
+                  <p>456 Sunrise Boulevard</p>
+                  <p>Innovation Hub, CA 94102</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="border-t border-blue-700 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 Vatas Engineering. All rights reserved.</p>
+            <p>&copy; 2025 Vatas Engineering. All rights reserved.</p>
           </div>
         </div>
       </footer>

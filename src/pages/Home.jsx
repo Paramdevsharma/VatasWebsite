@@ -22,10 +22,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-text-dark)] mb-6">
-              Ready to Start Something Amazing?
+              Ready to Modernize Your Infrastructure?
             </h2>
             <p className="text-xl text-[var(--color-text-muted)] mb-8">
-              Let's bring your engineering vision to life with fresh ideas and innovative solutions. 
+              Let's bring your engineering vision to life with integrated physical and digital solutions. 
               Get a free consultation today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -37,7 +37,7 @@ export default function Home() {
               </Link>
               <Link to={createPageUrl("About")}>
                 <Button size="lg" variant="outline" className="border-[var(--color-border)] text-[var(--color-text-dark)] hover:bg-white px-8">
-                  Meet Our Team
+                  Learn About Our Approach
                 </Button>
               </Link>
             </div>

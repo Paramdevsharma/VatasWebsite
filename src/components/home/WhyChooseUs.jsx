@@ -1,27 +1,28 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Lightbulb, Zap, Heart, Target } from "lucide-react";
+import { Lightbulb, Zap, Heart, Target, Code, Construction, Layers, Users } from "lucide-react";
 
 const reasons = [
   {
-    icon: Lightbulb,
-    title: "Fresh Perspective",
-    description: "We bring new ideas and innovative approaches to every engineering challenge.",
+    icon: Layers,
+    title: "Dual Expertise",
+    description: "The only firm combining civil engineering AND software development under one roof.",
   },
   {
     icon: Zap,
-    title: "Latest Technology",
-    description: "Cutting-edge tools and software to deliver the most efficient solutions.",
+    title: "Complete Solutions",
+    description: "From bridge design to municipal dashboards - we handle your entire infrastructure ecosystem.",
   },
   {
     icon: Heart,
     title: "Passionate Team",
-    description: "Our engineers are driven by passion for creating amazing projects.",
+    description: "Engineers and developers working together to create integrated, modern solutions.",
   },
   {
     icon: Target,
-    title: "Client Focused",
-    description: "Every project is tailored to meet your specific needs and goals.",
+    title: "Municipal Focus",
+    description: "Deep understanding of both physical infrastructure and digital systems needs.",
   }
 ];
 
@@ -34,11 +35,11 @@ export default function WhyChooseUs() {
             Why Choose Vatas
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-text-dark)] mb-6">
-            Why Partner With Us?
+            A New Model for Engineering
           </h2>
           <p className="text-xl text-[var(--color-text-muted)] max-w-3xl mx-auto">
-            As a new engineering firm, we're hungry to prove ourselves and deliver 
-            exceptional results that exceed your expectations.
+            Unlike traditional firms that specialize in just one area, we deliver both 
+            physical infrastructure engineering AND the digital systems that support it.
           </p>
         </div>
 
@@ -54,6 +55,67 @@ export default function WhyChooseUs() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Dual Capability Showcase */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Card className="border border-[var(--color-border)] shadow-lg bg-white">
+            <CardContent className="p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-[var(--color-primary-dark)] rounded-xl flex items-center justify-center">
+                  <Construction className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-[var(--color-text-dark)]">Civil Engineering</h3>
+              </div>
+              <ul className="space-y-3 text-[var(--color-text-muted)]">
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
+                  Bridge & culvert rehabilitation
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
+                  Traffic engineering & studies
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
+                  Roadway design & retaining walls
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
+                  Construction administration
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="border border-[var(--color-border)] shadow-lg bg-white">
+            <CardContent className="p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-[var(--color-accent-primary)] rounded-xl flex items-center justify-center">
+                  <Code className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-[var(--color-text-dark)]">Software Development</h3>
+              </div>
+              <ul className="space-y-3 text-[var(--color-text-muted)]">
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
+                  Municipal digital systems
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
+                  Custom web applications
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
+                  Cloud services & hosting
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
+                  Digital twins & BIM integration
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

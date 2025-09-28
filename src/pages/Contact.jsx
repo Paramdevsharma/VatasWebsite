@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MapPin, Clock, Send, Lightbulb } from "lucide-react";
 
@@ -19,6 +20,7 @@ export default function Contact() {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -58,8 +60,11 @@ export default function Contact() {
       if (!response.ok) {
         throw new Error('Failed to send email');
       }
-
-      alert("Thank you for your message! We've received it and will get back to you shortly.");
+          toast({
+      title: "Message sent!",
+      description: "Thank you for your message. We'll get back to you shortly.",
+          });
+      //alert("Thank you for your message! We've received it and will get back to you shortly.");
       
       // Reset form
       setFormData({
@@ -122,7 +127,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-[var(--color-text-dark)]">Phone</h3>
-                        <p className="text-[var(--color-text-muted)]">(555) 987-6543</p>
+                        <p className="text-[var(--color-text-muted)]">647-760-5889</p>
                       </div>
                     </div>
                   </CardContent>
@@ -136,7 +141,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-[var(--color-text-dark)]">Email</h3>
-                        <p className="text-[var(--color-text-muted)]">hello@vatasengineering.com</p>
+                        <p className="text-[var(--color-text-muted)]">paramvatas@gmail.com</p>
                       </div>
                     </div>
                   </CardContent>
