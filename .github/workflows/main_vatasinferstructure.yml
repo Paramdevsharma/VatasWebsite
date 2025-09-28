@@ -27,6 +27,7 @@ jobs:
         run: |
           npm install
           npm run build --if-present
+          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -50,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5FAB6F47A5834F4FB1FD0C92F048B388 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A4521FFD5C6743CBA05DFE92741C4AEE }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6EECE986A64B43EC9529F8DF61E0F31C }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E067BACF1A934046AD1B71741023B4A2 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B867C71662664044AC492F6D2FB6C0B6 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5BF44075916749DFB2D70ABD912DC8B8 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -61,5 +62,4 @@ jobs:
           app-name: 'VatasInferstructure'
           slot-name: 'Production'
           package: .
-
           
