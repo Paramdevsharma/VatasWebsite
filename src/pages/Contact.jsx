@@ -6,8 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, MapPin, Clock, Send, Lightbulb } from "lucide-react";
-import { Inquiry } from "@/api/entities";
-import { SendEmail } from "@/api/integrations";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,39 +25,43 @@ export default function Contact() {
     setIsSubmitting(true);
     
     try {
-      // Step 1: Save the submission to the Inquiry entity as a secure backup.
-      await Inquiry.create(formData);
+      // The database backup functionality has been removed to prevent login redirects.
+      // Now, we only send the email via EmailJS.
 
-      // Step 2: Format the data into a clean email body.
-      const emailBody = `
-You have received a new project inquiry from your website.
+      const emailData = {
+        to_email: 'paramvatas@gmail.com',
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || 'Not provided',
+        company: formData.company || 'Not provided',
+        projectType: formData.projectType || 'Not specified',
+        budget: formData.budget || 'Not specified',
+        timeLine: formData.timeline || 'Not specified',
+        details: formData.message,
+        subject: `New Vatas Engineering Inquiry from ${formData.name}`
+      };
 
----
-**Contact Information:**
-- **Name:** ${formData.name}
-- **Email:** ${formData.email}
-- **Phone:** ${formData.phone || 'Not provided'}
-- **Company:** ${formData.company || 'Not provided'}
-
-**Project Details:**
-- **Project Type:** ${formData.projectType || 'Not specified'}
-- **Budget:** ${formData.budget || 'Not specified'}
-- **Timeline:** ${formData.timeline || 'Not specified'}
-
-**Message:**
-${formData.message}
----
-      `;
-
-      // Step 3: Use the SendEmail integration to send the data to your email.
-      await SendEmail({
-        from_name: "Vatas Engineering Website",
-        to: "paramvatas@gmail.com",
-        subject: `New Inquiry from ${formData.name}`,
-        body: emailBody
+      // Send email using EmailJS API directly
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          service_id: 'service_04qzl3i',
+          template_id: 'template_7nlx1vq',
+          user_id: 'h3pUwav733vghFsvu',
+          template_params: emailData
+        })
       });
 
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+
       alert("Thank you for your message! We've received it and will get back to you shortly.");
+      
+      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -70,9 +72,10 @@ ${formData.message}
         timeline: "",
         message: ""
       });
+      
     } catch (error) {
       console.error("Submission Error:", error);
-      alert("There was an error submitting your message. Please try again or contact us directly.");
+      alert("There was an error submitting your message. Please try again or contact us directly at paramvatas@gmail.com.");
     } finally {
       setIsSubmitting(false);
     }
