@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -8,18 +7,13 @@ import { ArrowRight, Lightbulb, Code, Construction } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative bg-[var(--color-background)] text-[var(--color-text-dark)] overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-4 py-24 lg:py-32">
+      <div className="relative max-w-7xl mx-auto px-4 py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center px-4 py-2 bg-[var(--color-accent-light)] border border-[var(--color-border)] rounded-full text-[var(--color-secondary-gray)] text-sm font-medium">
-              <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-              Now accepting new engineering projects
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Modern Engineering.
-              <span className="block text-[var(--color-accent-primary)]">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              Vatas Engineering
+              <span className="block text-[var(--color-accent-primary)] mt-2">
                 Integrated Solutions.
               </span>
             </h1>
