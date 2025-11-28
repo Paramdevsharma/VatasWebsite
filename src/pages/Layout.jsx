@@ -10,7 +10,7 @@ const navigationItems = [
   { name: "Home", url: createPageUrl("Home") },
   { name: "About", url: createPageUrl("About") },
   { name: "Services", url: createPageUrl("Services") },
-  { name: "Projects", url: createPageUrl("Projects") },
+  // { name: "Projects", url: createPageUrl("Projects") },
   { name: "Vision", url: createPageUrl("Vision") },
   { name: "Contact", url: createPageUrl("Contact") },
 ];
