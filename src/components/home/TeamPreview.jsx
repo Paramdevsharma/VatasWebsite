@@ -7,23 +7,24 @@ import { ArrowRight, Star } from "lucide-react";
 
 const teamHighlights = [
   {
-    name: "Dr. Sarah Chen",
+    name: "Karan D. Sharma",
     role: "Founder & Lead Engineer", 
-    background: "PhD from MIT, 12 years at top firms",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+    background: " P.Eng (Ontario) - Civil/Structural & Transportation Bridges, culverts, guiderail, pavements, roadway design",
+    image: "src/images/0S6A5612-Edit2.jpg",
   },
   {
-    name: "Marcus Rodriguez",
-    role: "Structural Engineering Lead",
-    background: "Stanford MS, innovative design specialist", 
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
-  },
-  {
-    name: "Emily Thompson",
-    role: "Environmental Solutions Expert",
-    background: "UC Berkeley PhD, sustainability pioneer",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
+    name: "Param D. Sharma",
+    role: "Co-founder & Engineer",
+    background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
+    image: "src/images/Param.heic"
   }
+  // ,
+  // {
+  //   name: "Emily Thompson",
+  //   role: "Environmental Solutions Expert",
+  //   background: "UC Berkeley PhD, sustainability pioneer",
+  //   image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
+  // }
 ];
 
 export default function TeamPreview() {
@@ -38,12 +39,12 @@ export default function TeamPreview() {
             Experienced Engineers, Fresh Energy
           </h2>
           <p className="text-xl text-[var(--color-text-muted)] max-w-3xl mx-auto">
-            Our founding team brings decades of combined experience from top engineering 
+            Our founding team brings engineering experience from top engineering 
             firms, now united with a vision to create something extraordinary.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {teamHighlights.map((member, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border border-[var(--color-border)] shadow-md bg-white">
               <CardContent className="p-8 text-center">
@@ -68,14 +69,14 @@ export default function TeamPreview() {
           ))}
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <Link to={createPageUrl("About")}>
             <Button size="lg" className="bg-[var(--color-primary-dark)] text-white hover:bg-[var(--color-accent-primary)]">
               Meet the Full Team
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
