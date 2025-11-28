@@ -95,7 +95,7 @@ export default function About() {
       </section>
 
       <VisionSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
 
       {/* Competitive Strategy Section */}
       <section className="py-20 bg-[var(--color-accent-light)] border-y border-[var(--color-border)]">

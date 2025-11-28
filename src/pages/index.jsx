@@ -30,7 +30,7 @@ const PAGES = {
     
     Digital: Digital,
     
-    Projects: Projects,
+  //  Projects: Projects,
     
 }
 
@@ -71,7 +71,7 @@ function PagesContent() {
                 
                 <Route path="/Digital" element={<Digital />} />
                 
-                <Route path="/Projects" element={<Projects />} />
+                {/* <Route path="/Projects" element={<Projects />} /> */}
                 
             </Routes>
         </Layout>
