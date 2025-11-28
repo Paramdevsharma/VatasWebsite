@@ -153,7 +153,7 @@ export default function Vision() {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&crop=center" 
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" 
                 alt="Innovation in engineering"
                 className="rounded-2xl shadow-2xl"
               />
