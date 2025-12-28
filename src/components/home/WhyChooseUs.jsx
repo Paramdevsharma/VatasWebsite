@@ -7,12 +7,12 @@ const reasons = [
   {
     icon: Layers,
     title: "Dual Expertise",
-    description: "The only firm combining civil engineering AND software development under one roof.",
+    description: "Canadian firm combining civil engineering and software development under one roof.",
   },
   {
     icon: Zap,
     title: "Complete Solutions",
-    description: "From bridge design to municipal dashboards - we handle your entire infrastructure ecosystem.",
+    description: "From highway design to municipal dashboards - we handle your entire infrastructure ecosystem.",
   },
   {
     icon: Heart,
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
           </h2>
           <p className="text-xl text-[var(--color-text-muted)] max-w-3xl mx-auto">
             Unlike traditional firms that specialize in just one area, we deliver both 
-            physical infrastructure engineering AND the digital systems that support it.
+            physical infrastructure engineering and the digital systems that support it.
           </p>
         </div>
 
@@ -70,20 +70,19 @@ export default function WhyChooseUs() {
               <ul className="space-y-3 text-[var(--color-text-muted)]">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
-                  Bridge & culvert rehabilitation
+                  Municipal Roadway & Corridor Design
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
-                  Traffic engineering & studies
-                </li>
+                     Culverts & Retaining Walls             </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
-                  Roadway design & retaining walls
-                </li>
+                    Construction Services & Field Inspection     
+                               </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[var(--color-primary-dark)] rounded-full" />
-                  Construction administration
-                </li>
+                    Transit Infrastructure Design Support      
+                               </li>
               </ul>
             </CardContent>
           </Card>
@@ -99,19 +98,15 @@ export default function WhyChooseUs() {
               <ul className="space-y-3 text-[var(--color-text-muted)]">
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
-                  Municipal digital systems
+                  Software Solution Development & Application Engineering
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
-                  Custom web applications
+                  Data Integration, APIs & Analytics
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
-                  Cloud services & hosting
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-[var(--color-accent-primary)] rounded-full" />
-                  Digital twins & BIM integration
+                  Cloud, Platform & Systems Engineering
                 </li>
               </ul>
             </CardContent>

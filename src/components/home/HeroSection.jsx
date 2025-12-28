@@ -19,7 +19,7 @@ export default function HeroSection() {
             </h1>
             
             <p className="text-xl text-[var(--color-text-muted)] leading-relaxed max-w-lg">
-              The firm that delivers both civil engineering expertise and custom software solutions. We handle the full spectrum of modern infrastructure needs.
+              The firm that delivers both Civil Engineering expertise and custom software solutions. We handle the full spectrum of modern infrastructure needs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
