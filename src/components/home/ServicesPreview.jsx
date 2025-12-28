@@ -6,17 +6,17 @@ import { Button } from "@/components/ui/button";
 import { Building, TrafficCone, Code, Users, ArrowRight } from "lucide-react";
 
 const services = [
+    {
+    icon: TrafficCone,
+    title: "Transportation Engineering", 
+    description: "Data-driven mobility solutions including traffic impact studies, corridor modeling, and safety audits.",
+    features: ["Municipal Design/Modeling", "Traffic Impact Studies", "Road Safety Reviews"]
+  },
   {
     icon: Building,
     title: "Structural Engineering",
     description: "Modern analysis, design, and rehabilitation solutions for bridges, culverts, and buildings.",
-    features: ["Advanced 3D Modeling", "Rehabilitation Planning", "Seismic Design"]
-  },
-  {
-    icon: TrafficCone,
-    title: "Transportation Engineering", 
-    description: "Data-driven mobility solutions including traffic impact studies, corridor modeling, and safety audits.",
-    features: ["Traffic Impact Studies", "Corridor Modeling", "Road Safety Audits"]
+    features: ["Culvert & Retaining Wall Design", "Rehabilitation & Strategies", "Staged Construction"]
   },
   {
     icon: Code,
