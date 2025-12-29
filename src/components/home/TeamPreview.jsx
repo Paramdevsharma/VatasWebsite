@@ -6,6 +6,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import KaranImg from "@/images/0S6A5612-Edit2.jpg";
 import ParamImg from "@/images/IMG_0657.jpg";
+import Carl from "@/images/1517479589091.jpg";
+import Jag from "@/images/1698422388117.jpg";
+import Sal from "@/images/1693568900614.jpg";
+import Monish from "@/images/1659479905760.jpg";
+import Gunj from "@/images/1664209728587.jpg";
+
 
 
 const teamHighlights = [
@@ -15,41 +21,41 @@ const teamHighlights = [
     background: " P.Eng (Ontario) - Civil/Structural & Transportation Bridges, culverts, guiderail, pavements, roadway design",
     image: KaranImg
   },
-  {
-    name: "Param D. Sharma",
-    role: "Co-founder & Engineer",
-    background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
-    image: ParamImg
-  },
+  // {
+  //   name: "Param D. Sharma",
+  //   role: "Co-founder & Engineer",
+  //   background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
+  //   image: ParamImg
+  // },
     {
     name: "Carlyle Glean",
     role: "Vice President, Municipal Transportation Design",
     background: "Senior municipal transportation engineer with 18+ years of experience in roadway geometry, roadside safety, drainage and corridor design", 
-    image: "src/images/Param.heic"
+    image: Carl
   },
     {
     name: "Jagjit Singh",
     role: "Director, Corridor Design & Transportation Engineering",
     background: "Transportation engineer with 16+ years delivering road and highway corridors, LRT interfaces, drainage and utilities coordination", 
-    image: "src/images/Param.heic"
+    image: Jag
   },
     {
     name: "Ahmed Salauddin Kabir",
     role: "Senior Project Engineer, Transit & Municipal Transportation",
     background: "Project engineer experienced on TTC, LRT and municipal transportation projects, bridging design, construction and project controls", 
-    image: "src/images/Param.heic"
+    image: Sal
   },
     {
     name: "Monish Lad",
     role: "Senior Structural Engineer, Culverts & Retaining Walls",
     background: "Structural engineer focused on culvert rehabilitation and replacement, liners, box culverts and retaining/MSE walls on municipal roads", 
-    image: "src/images/Param.heic"
+    image: Monish
   },
       {
     name: "Gunj Patel",
     role: "Lead, Construction Services & Field Inspection",
     background: "Site inspector and construction services lead with experience on roadway, watermain and sewer works, supporting contract administration in the field", 
-    image: "src/images/Param.heic"
+    image: Gunj
   }
   // ,
   // {
