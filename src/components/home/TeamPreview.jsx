@@ -39,24 +39,24 @@ const teamHighlights = [
     background: "Transportation engineer with 16+ years delivering road and highway corridors, LRT interfaces, drainage and utilities coordination", 
     image: Jag
   },
-    {
-    name: "Ahmed Salauddin Kabir",
-    role: "Senior Project Engineer, Transit & Municipal Transportation",
-    background: "Project engineer experienced on TTC, LRT and municipal transportation projects, bridging design, construction and project controls", 
-    image: Sal
-  },
+  //   {
+  //   name: "Ahmed Salauddin Kabir",
+  //   role: "Senior Project Engineer, Transit & Municipal Transportation",
+  //   background: "Project engineer experienced on TTC, LRT and municipal transportation projects, bridging design, construction and project controls", 
+  //   image: Sal
+  // },
     {
     name: "Monish Lad",
     role: "Senior Structural Engineer, Culverts & Retaining Walls",
     background: "Structural engineer focused on culvert rehabilitation and replacement, liners, box culverts and retaining/MSE walls on municipal roads", 
     image: Monish
   },
-      {
-    name: "Gunj Patel",
-    role: "Lead, Construction Services & Field Inspection",
-    background: "Site inspector and construction services lead with experience on roadway, watermain and sewer works, supporting contract administration in the field", 
-    image: Gunj
-  }
+  //     {
+  //   name: "Gunj Patel",
+  //   role: "Lead, Construction Services & Field Inspection",
+  //   background: "Site inspector and construction services lead with experience on roadway, watermain and sewer works, supporting contract administration in the field", 
+  //   image: Gunj
+  // }
   // ,
   // {
   //   name: "Emily Thompson",
@@ -108,15 +108,20 @@ export default function TeamPreview() {
   ))}
 </div>
 
-
-        {/* <div className="text-center">
-          <Link to={createPageUrl("About")}>
-            <Button size="lg" className="bg-[var(--color-primary-dark)] text-white hover:bg-[var(--color-accent-primary)]">
+        <div className="text-center">
+          <Link
+            to={createPageUrl("About")}
+            onClick={() => sessionStorage.setItem("scrollTarget", "team")}
+          >
+            <Button
+              size="lg"
+              className="bg-[var(--color-primary-dark)] text-white hover:bg-[var(--color-accent-primary)]"
+            >
               Meet the Full Team
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
-        </div> */}
+        </div>
       </div>
     </section>
   );
