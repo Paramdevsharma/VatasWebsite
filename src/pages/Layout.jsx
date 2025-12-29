@@ -68,7 +68,7 @@ export default function Layout({ children, currentPageName }) {
               <Link to={createPageUrl("Home")} className="flex items-center gap-4">
                 <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68c492baa23201e24e8eaa63/b1d6f271f_image.png" alt="Vatas Engineering Logo" className="h-12 w-auto" />
                 <div>
-                  <div className="text-2xl font-bold text-[var(--color-text-dark)]">Vatas Engineering</div>
+                  <div className="text-2xl font-bold text-[var(--color-text-dark)]">Vatas Infrastructure</div>
                   <div className="text-sm text-[var(--color-text-muted)] -mt-1">Integrated Engineering for Public Infrastructure</div>
                 </div>
               </Link>

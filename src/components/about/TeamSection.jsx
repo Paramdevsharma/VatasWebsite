@@ -2,36 +2,56 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Linkedin, Mail } from "lucide-react";
-
+import KaranImg from "@/images/0S6A5612-Edit2.jpg";
+import ParamImg from "@/images/IMG_0657.jpg";
+import Carl from "@/images/1517479589091.jpg";
+import Jag from "@/images/1698422388117.jpg";
+import Sal from "@/images/1693568900614.jpg";
+import Monish from "@/images/1659479905760.jpg";
+import Gunj from "@/images/1664209728587.jpg";
 const team = [
   {
-    name: "Karan Dev Sharma, P.Eng., PMP",
-    role: "Founder & Principal Engineer",
-    specialization: "Municipal Engineering",
-    background: "Managed a $22M/year structural renewal program at York Region and contributed to projects valued at $400M–$4.6B.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+    name: "Karan D. Sharma",
+    role: "Founder & Lead Engineer", 
+    background: " P.Eng (Ontario) - Civil/Structural & Transportation Bridges, culverts, guiderail, pavements, roadway design",
+    image: KaranImg
   },
-  {
-    name: "Co-Founder",
-    role: "Lead, Digital & Technology", 
-    specialization: "Software & Cloud Architecture",
-    background: "Proven track record in software development, cloud infrastructure, and technology solution architecture for government and enterprise clients.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
-  },
-  {
-    name: "Dr. Emily Thompson",
-    role: "Environmental Engineering Lead",
-    specialization: "Sustainability Solutions",
-    background: "PhD MIT, Green building expert. Focused on lifecycle design and carbon reduction.", 
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
+  // {
+  //   name: "Param D. Sharma",
+  //   role: "Co-founder & Engineer",
+  //   background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
+  //   image: ParamImg
+  // },
+    {
+    name: "Carlyle Glean",
+    role: "Vice President, Municipal Transportation Design",
+    background: "Senior municipal transportation engineer with 18+ years of experience in roadway geometry, roadside safety, drainage and corridor design", 
+    image: Carl
   },
     {
-    name: "Dr. Sarah Chen",
-    role: "Lead Structural Engineer",
-    specialization: "Bridge & Culvert Rehabilitation",
-    background: "PhD Stanford, 12 years at Arup & AECOM. Expert in structural assessments and rehab planning.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+    name: "Jagjit Singh",
+    role: "Director, Corridor Design & Transportation Engineering",
+    background: "Transportation engineer with 16+ years delivering road and highway corridors, LRT interfaces, drainage and utilities coordination", 
+    image: Jag
   },
+    {
+    name: "Ahmed Salauddin Kabir",
+    role: "Senior Project Engineer, Transit & Municipal Transportation",
+    background: "Project engineer experienced on TTC, LRT and municipal transportation projects, bridging design, construction and project controls", 
+    image: Sal
+  },
+    {
+    name: "Monish Lad",
+    role: "Senior Structural Engineer, Culverts & Retaining Walls",
+    background: "Structural engineer focused on culvert rehabilitation and replacement, liners, box culverts and retaining/MSE walls on municipal roads", 
+    image: Monish
+  },
+      {
+    name: "Gunj Patel",
+    role: "Lead, Construction Services & Field Inspection",
+    background: "Site inspector and construction services lead with experience on roadway, watermain and sewer works, supporting contract administration in the field", 
+    image: Gunj
+  }
 ];
 
 export default function TeamSection() {
@@ -48,9 +68,9 @@ export default function TeamSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-8 mb-12">
           {team.map((member, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border border-[var(--color-border)] shadow-lg">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border border-[var(--color-border)] shadow-lg w-full sm:w-[calc(50%-1rem)] md:w-[calc(25%-1.5rem)] max-w-[280px]">
               <CardContent className="p-6">
                 <div className="text-center">
                   <div className="relative mb-6">

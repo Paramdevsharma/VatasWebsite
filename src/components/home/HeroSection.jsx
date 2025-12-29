@@ -12,9 +12,9 @@ export default function HeroSection() {
           {/* Content */}
           <div className="space-y-8">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Vatas Engineering
+              Vatas Infrastructure
               <span className="block text-[var(--color-accent-primary)] mt-2">
-                Integrated Solutions.
+                Engineering Solutions
               </span>
             </h1>
             

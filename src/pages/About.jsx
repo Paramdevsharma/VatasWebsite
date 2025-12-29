@@ -1,5 +1,6 @@
 
 import React from "react";
+import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -32,6 +33,26 @@ const evaluationCriteria = [
 ];
 
 export default function About() {
+    useEffect(() => {
+    const id = sessionStorage.getItem("scrollTarget");
+    if (!id) return;
+
+    sessionStorage.removeItem("scrollTarget");
+
+    let tries = 0;
+    const maxTries = 60;
+
+    const tryScroll = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      if (tries++ < maxTries) requestAnimationFrame(tryScroll);
+    };
+
+    setTimeout(() => requestAnimationFrame(tryScroll), 0);
+  }, []);
   return (
     <div>
       {/* Hero Section */}
@@ -95,8 +116,9 @@ export default function About() {
       </section>
 
       <VisionSection />
-      {/* <TeamSection /> */}
-
+      <section id="team" className="scroll-mt-24">
+        <TeamSection />
+      </section>
       {/* Competitive Strategy Section */}
       <section className="py-20 bg-[var(--color-accent-light)] border-y border-[var(--color-border)]">
         <div className="max-w-7xl mx-auto px-4">
