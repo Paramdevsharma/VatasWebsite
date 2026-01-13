@@ -102,7 +102,7 @@ export default function About() {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&crop=center" 
+                src="https://images.pexels.com/photos/8482865/pexels-photo-8482865.jpeg" 
                 alt="Engineering and technology collaboration"
                 className="rounded-2xl shadow-2xl"
               />
