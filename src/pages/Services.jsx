@@ -12,7 +12,7 @@ const civilServices = [
     icon: Truck,
     title: "Structural Engineering – Culverts & Retaining Walls",
     description: "Vatas provides structural services for small to mid-scale culverts and retaining walls associated with municipal roadways and corridors",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    image: "https://www.strataglobal.com/wp-content/uploads/2024/11/Culvert-headwall-1024x577.jpg",
     tagline: "Minimizing impact, maximizing asset life",
     details: <ul className="list-disc list-inside text-[var(--color-text-muted)] space-y-1">
             <li>Condition review and planning support for culverts and retaining walls, including input to structural planning / options analysis.</li>
@@ -26,7 +26,7 @@ const civilServices = [
     icon: Construction,
     title: "Municipal Roadway & Highway Design",
     description: "Vatas supports municipal and regional roadway programs with practical, constructable design services",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1721595279388-085728677a50?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tagline: "Safe, resilient, and cost-effective design",
     details: <ul className="list-disc list-inside text-[var(--color-text-muted)] space-y-1">
               <li>Minor capital and resurfacing projects, such as pavement rehabilitation, localized widening, and safety-related civil works.</li>
@@ -41,7 +41,7 @@ const civilServices = [
     icon: TrafficCone,
     title: "Transit & Corridor Advisory Services",
     description: "For corridors influenced by BRT/LRT, subway or major transit infrastructure, Vatas provides advisory and design support focused on roadway and civil components",
-    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1752441785826-d2988234afbb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tagline: "Data-driven mobility solutions",
     details: <ul className="list-disc list-inside text-[var(--color-text-muted)] space-y-1">
               <li>Road and intersection modifications to accommodate transit corridors, stations, stops, and bus operations.</li>
@@ -55,7 +55,7 @@ const civilServices = [
     icon: Toolbox,
     title: "Traffic Management, Staging & Detours",
     description: "Vatas incorporates traffic management and constructability into design so that guiderail, resurfacing, culvert and minor civil works can be delivered efficiently",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1736905193262-971dfbf00074?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tagline: "Ensuring quality from design to delivery",
     details: <ul className="list-disc list-inside text-[var(--color-text-muted)] space-y-1">
               <li>High-level staging concepts for inclusion in planning documents and early design phases.</li>

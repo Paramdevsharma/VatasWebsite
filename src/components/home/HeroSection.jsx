@@ -66,7 +66,7 @@ export default function HeroSection() {
             <div className="aspect-square bg-[var(--color-accent-light)] rounded-3xl border border-[var(--color-border)] p-8">
               <div className="h-full flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=600&fit=crop&crop=faces"
+                  src="https://plus.unsplash.com/premium_photo-1681823092147-26b2a76ae82a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Engineering and technology team"
                   className="rounded-2xl object-cover w-full h-full shadow-xl"
                 />

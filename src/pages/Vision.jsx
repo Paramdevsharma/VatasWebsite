@@ -39,7 +39,7 @@ export default function Vision() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop&crop=center" 
+                src="https://blog.fenstermaker.com/wp-content/uploads/2023/01/thisisengineering-raeng-hoivM01c-vg-unsplash-1.jpg" 
                 alt="Future engineering vision"
                 className="rounded-2xl shadow-2xl"
               />
