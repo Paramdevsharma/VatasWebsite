@@ -5,6 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Lightbulb, Users, Target, Zap, Handshake, DollarSign, Sparkles, FileCheck, CalendarClock, Cpu } from "lucide-react";
+import bookletPdf from "../assets/Vatas Infrastructure Group Inc. – Qualifications & Capabilities Statementatas_Infrastructure_Booklet.pdf";
+import { Button } from "@/components/ui/button";
+
 
 import TeamSection from "../components/about/TeamSection";
 import VisionSection from "../components/about/VisionSection";
@@ -65,6 +68,19 @@ export default function About() {
             <p className="text-xl text-[var(--color-text-muted)] leading-relaxed mb-8">
               A Canadian-rooted, digital-first engineering consultancy founded to help municipalities and public agencies deliver more infrastructure for every taxpayer dollar.
             </p>
+
+
+<div className="mb-8 flex justify-center">
+  <Button
+    asChild
+    size="lg"
+    className="bg-[var(--color-primary-dark)] hover:bg-[var(--color-accent-primary)] px-8 text-white"
+  >
+    <a href={bookletPdf} target="_blank" rel="noopener noreferrer">
+      View Company Booklet
+    </a>
+  </Button>
+</div>
             <div className="flex justify-center gap-4 flex-wrap">
               <Badge variant="outline" className="border-[var(--color-border)] bg-white px-4 py-2 text-sm">
                 Founded 2025
