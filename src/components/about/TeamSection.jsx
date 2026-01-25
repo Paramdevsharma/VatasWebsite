@@ -16,12 +16,12 @@ const team = [
     background: " P.Eng (Ontario) - Civil/Structural & Transportation Bridges, culverts, guiderail, pavements, roadway design",
     image: KaranImg
   },
-  // {
-  //   name: "Param D. Sharma",
-  //   role: "Co-founder & Engineer",
-  //   background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
-  //   image: ParamImg
-  // },
+  {
+    name: "Param D. Sharma",
+    role: "Co-founder & Engineer",
+    background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
+    image: ParamImg
+  },
     {
     name: "Carlyle Glean",
     role: "Vice President, Municipal Transportation Design",
@@ -86,22 +86,22 @@ export default function TeamSection() {
                   <p className="text-[var(--color-secondary-gray)] font-medium text-sm mb-3">{member.role}</p>
                   
                   <div className="space-y-2 mb-4">
-                    <Badge variant="outline" className="text-xs border-[var(--color-border)]">
+                    {/* <Badge variant="outline" className="text-xs border-[var(--color-border)]">
                       {member.specialization}
-                    </Badge>
+                    </Badge> */}
                     <div className="text-xs text-[var(--color-text-muted)]">
                       <p>{member.background}</p>
                     </div>
                   </div>
 
-                  <div className="flex justify-center gap-3">
+                  {/* <div className="flex justify-center gap-3">
                     <button className="w-8 h-8 bg-[var(--color-accent-light)] hover:bg-[var(--color-border)] rounded-full flex items-center justify-center transition-colors border border-[var(--color-border)]">
                       <Linkedin className="w-4 h-4 text-[var(--color-secondary-gray)]" />
                     </button>
                     <button className="w-8 h-8 bg-[var(--color-accent-light)] hover:bg-[var(--color-border)] rounded-full flex items-center justify-center transition-colors border border-[var(--color-border)]">
                       <Mail className="w-4 h-4 text-[var(--color-secondary-gray)]" />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>

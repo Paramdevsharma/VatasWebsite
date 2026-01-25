@@ -21,12 +21,12 @@ const teamHighlights = [
     background: " P.Eng (Ontario) - Civil/Structural & Transportation Bridges, culverts, guiderail, pavements, roadway design",
     image: KaranImg
   },
-  // {
-  //   name: "Param D. Sharma",
-  //   role: "Co-founder & Engineer",
-  //   background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
-  //   image: ParamImg
-  // },
+  {
+    name: "Param D. Sharma",
+    role: "Co-founder & Engineer",
+    background: "Software engineer specializing in cloud-native systems and municipal digital solutions", 
+    image: ParamImg
+  },
     {
     name: "Carlyle Glean",
     role: "Vice President, Municipal Transportation Design",
@@ -45,12 +45,12 @@ const teamHighlights = [
   //   background: "Project engineer experienced on TTC, LRT and municipal transportation projects, bridging design, construction and project controls", 
   //   image: Sal
   // },
-    {
-    name: "Monish Lad",
-    role: "Senior Structural Engineer, Culverts & Retaining Walls",
-    background: "Structural engineer focused on culvert rehabilitation and replacement, liners, box culverts and retaining/MSE walls on municipal roads", 
-    image: Monish
-  },
+  //   {
+  //   name: "Monish Lad",
+  //   role: "Senior Structural Engineer, Culverts & Retaining Walls",
+  //   background: "Structural engineer focused on culvert rehabilitation and replacement, liners, box culverts and retaining/MSE walls on municipal roads", 
+  //   image: Monish
+  // },
   //     {
   //   name: "Gunj Patel",
   //   role: "Lead, Construction Services & Field Inspection",

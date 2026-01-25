@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Lightbulb, Code, Construction } from "lucide-react";
+import bookletPdf from "../../assets/Vatas Infrastructure Group Inc. – Qualifications & Capabilities Statementatas_Infrastructure_Booklet.pdf";
+
 
 export default function HeroSection() {
   return (
@@ -23,18 +25,27 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to={createPageUrl("Contact")}>
+              {/* <Link to={createPageUrl("Contact")}>
                 <Button size="lg" className="bg-[var(--color-primary-dark)] hover:bg-[var(--color-accent-primary)] px-8 text-white">
                   Start Your Project
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
-              </Link>
+              </Link> */}
               <Link to={createPageUrl("Services")}>
-                <Button size="lg" variant="outline" className="border-[var(--color-border)] text-[var(--color-text-dark)] hover:bg-[var(--color-accent-light)]">
+                <Button size="lg" className="bg-[var(--color-primary-dark)] hover:bg-[var(--color-accent-primary)] px-8 text-white">
+                {/* <Button size="lg" variant="outline" className="border-[var(--color-border)] text-[var(--color-text-dark)] hover:bg-[var(--color-accent-light)]"> */}
                   <Construction className="w-5 h-5 mr-2" />
                   Our Services
                 </Button>
               </Link>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-[var(--color-border)] text-[var(--color-text-dark)] hover:bg-[var(--color-accent-light)]"
+                onClick={() => window.open(bookletPdf, "_blank", "noopener,noreferrer")}
+              >
+                View Company Booklet
+              </Button>
             </div>
 
             {/* Dual Expertise Indicators */}
